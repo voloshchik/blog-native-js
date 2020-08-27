@@ -4,7 +4,9 @@
   "description": "js native blog",
   "main": "index.js",
   "scripts": {
-    "start": "webpack"
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development",
+    "start": "webpack-dev-server --mode development --open"
   },
   "keywords": [
     "js",
@@ -13,12 +15,11 @@
   ],
   "author": "Vladimir Voloshchik",
   "license": "ISC",
-  "dependencies": {
-    "webpack-dev-server": "^3.11.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "html-webpack-plugin": "^4.3.0",
     "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   }
 }
