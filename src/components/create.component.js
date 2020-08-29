@@ -27,6 +27,7 @@ function submitHandler(e) {
         };
 
         console.log(formData);
+        this.form.clear();
     } else {
         console.warn('Fomrm is valid');
     }
