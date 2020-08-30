@@ -5,12 +5,15 @@ export class Component {
     }
 
     init() {}
-
+    onHide() {}
+    onShow() {}
     hide() {
         this.$el.classList.add('hide');
+        this.onHide();
     }
 
     show() {
         this.$el.classList.remove('hide');
+        this.onShow();
     }
 }
